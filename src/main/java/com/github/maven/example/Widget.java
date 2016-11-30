@@ -52,4 +52,11 @@ public class Widget {
 		this.enabled = enabled;
 		return this;
 	}
+	/**
+	*This method checks if a day is Friday.	
+	*/
+	public static int Sum(int a, int b){
+		int sum=a+b;
+		return sum;				
+	}
 }

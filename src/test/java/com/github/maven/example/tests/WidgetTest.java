@@ -32,4 +32,14 @@ public class WidgetTest {
 		widget.setEnabled(true);
 		assertTrue(widget.isEnabled());
 	}
+	
+	/**
+	* This method checks if a day is friday	
+	*/
+	public static boolean checkFriday(String indate)throws ParseException{
+		Calendar date = getDate(indate);
+		boolean isF = date.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY;
+		System.out.println(date.getTime());
+		return isF;				
+	}
 }

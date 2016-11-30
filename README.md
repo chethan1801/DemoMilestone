@@ -37,3 +37,13 @@ $ mvn site
 ```
 
 The generated site will be committed to the [gh-pages branch](https://github.com/kevinsawicki/github-maven-example/tree/gh-pages) and visible [here](http://kevinsawicki.github.com/github-maven-example/).
+
+/*
+This is a documentation of the function below	
+*/
+	public static boolean checkFriday(String indate)throws ParseException{
+		Calendar date = getDate(indate);
+		boolean isF = date.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY;
+		System.out.println(date.getTime());
+		return isF;				
+	}
